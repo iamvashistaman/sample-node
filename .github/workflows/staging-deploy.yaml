@@ -1,0 +1,13 @@
+name: Deploy-to-staging
+
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  Build-and-Deploy:
+    runs-on: 35.236.219.144
+    environment: staging
+    steps:
+      - name: build
+        run: ls -la
