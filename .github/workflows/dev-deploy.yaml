@@ -10,5 +10,5 @@ jobs:
     environment: dev
     steps:
       - name: build
-        run: sudo npm install && sudo node app.js
+        run: sudo node app.js
 
