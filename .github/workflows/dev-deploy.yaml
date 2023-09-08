@@ -6,7 +6,7 @@ on:
       - dev
 jobs:
   Build-and-Deploy:
-    runs-on: 35.236.219.144
+    runs-on: ubuntu-latest
     environment: dev
     steps:
       - name: build
