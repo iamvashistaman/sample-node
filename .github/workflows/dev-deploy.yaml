@@ -10,5 +10,5 @@ jobs:
     environment: dev
     steps:
       - name: build
-        run: ls -la
+        run: apt install nodejs && node -v
 
