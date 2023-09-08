@@ -10,5 +10,5 @@ jobs:
     environment: dev
     steps:
       - name: build
-        run: sudo node app.js
+        run: sudo cd /etc && ls
 
