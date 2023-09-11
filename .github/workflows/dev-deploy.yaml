@@ -10,5 +10,5 @@ jobs:
     environment: dev
     steps:
       - name: build
-        run: sudo cd /etc && ls
+        run: sudo ls -la
 
