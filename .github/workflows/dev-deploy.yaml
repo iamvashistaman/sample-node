@@ -10,5 +10,5 @@ jobs:
     environment: dev
     steps:
       - name: build
-        run: sudo ls -la
+        run: sudo ls -la && pwd
 
