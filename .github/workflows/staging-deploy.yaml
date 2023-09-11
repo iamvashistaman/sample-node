@@ -10,5 +10,7 @@ jobs:
     environment: staging
     steps:
       - uses: actions/checkout@v2
-      - name: build
-        run: ls -la
+      - name: SSH server 
+        run: echo "${{ secrets.SSH_KEY }}" > ./key && chmod 600 ./key && ssh -i key aman@35.236.219.144 "rm -rf /var/www/html/node-staging/*"
+      - name: Copy build to server
+        run: scp -i ./key -r ./* aman@35.236.219.144:/var/www/html/node-staging/
