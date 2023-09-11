@@ -9,9 +9,7 @@ jobs:
     runs-on: 35.236.219.144
     environment: dev
     steps:
-      - uses: actions/checkout@v2
-      - name: build
-        run: npm install 
+      - uses: actions/checkout@v2 
       - name: SSH server 
         run: echo "${{ secrets.SSH_KEY }}" > ./key && chmod 600 ./key
       - name: Copy build to server
