@@ -10,5 +10,6 @@ jobs:
     environment: dev
     steps:
       - name: build
+        working-directory: dev
         run: sudo ls -la && pwd
 
