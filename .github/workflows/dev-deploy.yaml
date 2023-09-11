@@ -9,7 +9,7 @@ jobs:
     runs-on: 35.236.219.144
     environment: dev
     steps:
+      - uses: actions/checkout@v2
       - name: build
-        working-directory: dev
         run: sudo ls -la && pwd
 
